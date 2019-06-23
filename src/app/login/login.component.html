@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+
+   
+</head>
+<body id="wrapper-login">
+
+
+	<div class="col-md-4 wrapper-bg text-center ">
+		<div class="wrapper-top">
+		<img src="../../assets/images/logo.jpg" class="img-responsive center-block" alt="">
+		<h2>Welcome</h2>
+		<p>Excilent way to connect with
+people</p>
+<a href="signup" class="re-btn">Register Now</a>
+</div>
+	</div>
+	<div class="col-md-8 wrapper-right text-center">
+		
+<div class="r-center">
+	<h3>Log in</h3>
+<br>
+<form class="form" [formGroup]="loginForm">
+                     <div class="input-group ">
+                        <span class="input-group-addon form-addon"><i class="zmdi zmdi-email-open zmdi-hc-fw"></i></span>
+                        <input id="email" type="text" class="form-control " name="email" formControlName="email" placeholder="Email">
+                        <div *ngIf="loginForm.controls['email'].touched && !loginForm.controls['email'].valid">
+                           <span class="help-block" style="color:red" *ngIf="loginForm.controls['email'].hasError('required')">
+                             Email is required</span>
+                         </div>
+                     </div>
+                     <div class="input-group ">
+                        <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input id="password" type="password" class="form-control " formControlName="password" name="password" placeholder="Password">
+                        <div *ngIf="loginForm.controls['password'].touched && !loginForm.controls['password'].valid">
+                           <span class="help-block" style="color:red" *ngIf="loginForm.controls['password'].hasError('required')">
+                             Password is required</span>
+                         </div>
+                     </div>
+                     
+                     <button type="button" class="btn-sign btn btn-primary" [disabled]="!loginForm.valid"
+                      (click)='login(loginForm.value)'>Sign in</button>
+
+                     
+
+  <p><strong> Don’t have an account ? <a href="signup">Register Now</a></strong></p>
+  <p><small> It’s really simple and you can start enjoying all the benefits</small></p>
+                  </form>
+</div>
+
+	</div>
+
+
+
+
+<script type="text/javascript" src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+
+<!-------------------navbar js start---------->
+
+<!-------------------navbar js close------------------->
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,700" rel="stylesheet">
+
+   <link href="../../../assets/css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/material-design-iconic-font.css" rel="stylesheet" type="text/css">
+   <!-- jQuery Selector -->
+   <!-- Bootstrap Core CSS -->
+   <link href="../../../assets/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Flag Selector -->
+   <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="../../../assets/css/owl.carousel.min.css">
+     <link href="../../../assets/css/jasny-bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+</head>
+<body>
+   <!-- nav
+      ================================================== -->
+  
+   
+ 
+<br>
+<br>
+
+
+
+
+
+<div class="container">
+        <div class="row">
+          <button class="btn-success" (click)='edit()' style="position: relative;
+          bottom: 39px;">Edit</button>
+          <div class="col-sm-6 col-md-4">
+            <div class="teacher__img">
+               <img *ngIf='!detailcv?.profile_picture' src="../../../assets/images/teacher_4.jpg" class="img-responsive" alt="...">
+               <img *ngIf='detailcv?.profile_picture' src="{{media}}{{detailcv?.profile_picture}}" class="img-responsive" alt="...">
+
+            </div>
+            <p class="subheading">Social</p>
+            <ul class="social__icons">
+                <li class="social-icons__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              
+                <li class="social-icons__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              
+                <li class="social-icons__item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              
+                <li class="social-icons__item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              
+              
+                <li class="social-icons__item"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              
+                <li class="social-icons__item"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+              </ul> <!-- .social__icons -->
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <div class="teacher__post">
+                  {{detailcv?.job_title}}
+               </div>
+               <h2 class="teacher__name">
+                  {{detailcv?.user_name}}
+               </h2>
+               <div class="teacher__branch">
+                  {{detailcv?.job_title}}
+               </div>
+               <p class="subheading">introduction</p>
+               <p class="teacher__text">
+                  {{detailcv?.breif_description}}
+               </p>
+              <!-- .teacher-biography__list -->
+               <div class="row">
+                 <div class="col-sm-12 col-md-6">
+                     <p class="subheading">Contact info</p>
+                     <ul class="teacher__contact">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> {{detailcv?.user_email}}
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>                  {{detailcv?.user_phone}}
+                        </li>
+                        
+                     </ul>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                    
+                 </div>
+               </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            <p class="subheading">Skills</p>
+            <div class="teacher__skills">
+              <h5>{{detailcv?.skill}}</h5>
+             
+             
+         
+            </div> <!-- .teacher__skills -->
+          </div>
+         
+        </div> <!-- / .row -->
+      </div>   
+   
+
+   <div class="container-fluid wrapper1">
+        <div class="container">
+       <div class="row">
+            <div class="col-md-3">
+                <div class="log"><img alt="" src="../../../assets/images/logo.jpg">
+                </div>
+
+              
+            </div>
+            <div class="col-md-3">
+                <h1>ABOUT US</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+            </div>
+            <div class="col-md-3">
+                <h1>CONTACT US</h1>
+            <p> 877-432-3555<br>
+RALEIGH, NORTH CAROLINA</p>
+
+            </div>
+            <div class="col-md-3">
+                <h1>FOLLOW US</h1>
+                <ul class="social-icon">
+                    <li><i class="zmdi zmdi-facebook"></i>
+                    </li>
+                    <li><i class="zmdi zmdi-linkedin"></i>
+                    </li>
+                    <li><i class="zmdi zmdi-twitter"></i>
+                    </li>
+                    <li><i class="zmdi zmdi-google-old"></i>
+                    </li>
+
+
+
+
+
+                </ul>
+
+
+            </div>
+         </div>
+        </div>
+    </div>     
+         
+      
+
+<footer class="container-fluid footer">
+<div class="container text-center">
+<p> 2019 Dental Total ACE's CV's    </p>
+
+
+</div>
+</footer>
+
+
+
+
+   <!-- jQuery -->
+   <script src="../../../assets/js/jquery-3.3.1.min.js"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script src="../../../assets/js/bootstrap.min.js"></script>
+   <script src="../../../assets/js/owl.carousel.min.js"></script>
+      <script src="../../../assets/js/jasny-bootstrap.min.js"></script>
+
+  
+
+
+  
+</body>
+</html>

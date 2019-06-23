@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+<link rel="stylesheet" href="../../../assets/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+
+   
+</head>
+<body id="wrapper-login">
+
+
+	<div class="col-md-4 wrapper-bg text-center ">
+		<div class="wrapper-top">
+		<img src="../../../assets/images/logo.png" class="img-responsive center-block" alt="">
+		<h2>Welcome</h2>
+		<p>Excilent way to connect with
+people</p>
+<a  class="re-btn">Update CV NOw</a>
+</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-md-8 text-center wrapper-right ">
+		
+<div class="r-center">
+	<h3>Update CV</h3>
+	<br>
+<form class="form">
+      <div class="input-group">
+      <input type="file" (change)='upload($event)' placeholder="Upload your image">
+      </div>
+	<div class="input-group">
+                        <span class="input-group-addon form-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control " [(ngModel)]='editModal.user_name' name="user_name" placeholder="Full Name">
+                        
+                   
+                     </div>
+                   
+                    
+                     <div class="input-group ">
+                        <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input id="password" type="text" class="form-control " [(ngModel)]='editModal.user_phone'  name="user_phone" placeholder="Phone Number">
+                       
+                    
+                     </div>
+                     <div class="input-group ">
+                           <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                           <input id="password" type="text" class="form-control " [(ngModel)]='editModal.website'  name="website" placeholder="website">
+                          
+                       
+                        </div>
+                        <div class="input-group ">
+                              <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                              <input id="password" type="text" class="form-control " [(ngModel)]='editModal.address'  name="address" placeholder="address">
+                             
+                          
+                           </div>
+                           <div class="input-group ">
+                                 <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                 <input id="password" type="text" class="form-control " [(ngModel)]='editModal.job_title'  name="job_title" placeholder="job title">
+                                
+                             
+                              </div>
+                              <div class="input-group ">
+                                    <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                    <input id="password" type="text" class="form-control " [(ngModel)]='editModal.company_name'  name="company_name" placeholder="company name">
+                                   
+                                
+                                 </div>
+                                 <div class="input-group ">
+                                       <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                       <input id="password" type="date" class="form-control " [(ngModel)]='editModal.startDate
+                                       '  name="startDate" placeholder="Start Date">
+                                      
+                                   
+                                    </div>
+                                    <div class="input-group ">
+                                          <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                          <input id="password" type="date" class="form-control " [(ngModel)]='editModal.endDate'  name="endDate" placeholder="End Date">
+                                         
+                                      
+                                       </div>
+                                       <div class="input-group ">
+                                             <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                             <textarea rows="4" cols="50" placeholder="please enter your skills" class="form-control " [(ngModel)]='editModal.skill'  name="skill"> </textarea>
+                                            
+                                         
+                                          </div>
+                                          <div class="input-group ">
+                                                <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                                <textarea rows="4" cols="50" placeholder="please enter breif description of your career" class="form-control " [(ngModel)]='editModal.breif_description'  name="breif_description"> </textarea>
+                                               
+                                            
+                                             </div>
+                                          
+                     
+                     <!-- <div class="input-group ">
+                        <span class="input-group-addon form-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input id="password" type="password" class="form-control " name="password" placeholder="Confirm password">
+
+                     </div> -->
+
+                   
+                      
+
+                      
+                     <button type="button" class="btn-sign btn btn-primary" 
+                     (click)='updateCV()'>Update CV</button>
+
+                
+
+  <p><small> It’s really simple and you can start enjoying all the benefits</small></p>
+                  </form>
+</div>
+
+	</div>
+
+
+
+
+<script type="text/javascript" src="../../../assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/bootstrap.min.js"></script>
+
+<!-------------------navbar js start---------->
+
+<!-------------------navbar js close------------------->
+</body>
+</html>
